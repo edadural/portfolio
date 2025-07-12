@@ -1,11 +1,13 @@
 import Header from "@/components/pages/Header";
-import Hero from "@/components/pages/Hero";
+import HeroSection from "@/components/pages/Hero";
+import ProjectsSection from "@/components/pages/Projects";
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <Hero />
+      <HeroSection />
+      <ProjectsSection />
     </div>
   );
 }
