@@ -1,7 +1,7 @@
-import Header from "@/sections/Header";
-import HeroSection from "@/sections/Hero";
-import ProjectsSection from "@/sections/Projects";
-import TapeSection from "@/sections/Tape";
+import Header from "@/components/pages/Header";
+import HeroSection from "@/components/pages/Hero";
+import ProjectsSection from "@/components/pages/Projects";
+import TapeSection from "@/components/pages/Tape";
 
 export default function Home() {
   return (
