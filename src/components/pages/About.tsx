@@ -39,11 +39,15 @@ export default function About() {
               className="px-6 pt-6"
             />
 
-            <ToolboxItems items={toolboxItems} className="mt-6" />
             <ToolboxItems
               items={toolboxItems}
               className="mt-6"
-              itemsWrapperClassName="-translate-x-1/2"
+              itemsWrapperClassName="animate-move-left [animation-duration:30s] hover:[animation-play-state:paused]"
+            />
+            <ToolboxItems
+              items={toolboxItems}
+              className="mt-6"
+              itemsWrapperClassName="animate-move-right [animation-duration:30s] hover:[animation-play-state:paused]"
             />
           </Card>
         </div>
