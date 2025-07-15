@@ -1,6 +1,9 @@
-import img1 from "@/assets/images/ai-startup-landing-page.png";
-import img2 from "@/assets/images/dark-saas-landing-page.png";
-import img3 from "@/assets/images/light-saas-landing-page.png";
+import movieMate from "@/assets/images/movieMate.png";
+import aora from "@/assets/images/aora.png";
+import dietTrack from "@/assets/images/dietTrack.png";
+import rn from "@/assets/images/rn.png";
+import mediaApp from "@/assets/images/media-app.png";
+import posApp from "@/assets/images/pos-app.png";
 import Image from "next/image";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -9,9 +12,9 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Company 1",
-    year: "2023",
-    title: "Project 1",
+    company: "Mobile App",
+    year: "2025",
+    title: "MovieMate",
     results: [
       {
         title: "Result 1",
@@ -24,12 +27,12 @@ const portfolioProjects = [
       },
     ],
     link: "#",
-    image: img1,
+    image: movieMate,
   },
   {
-    company: "Company 2",
-    year: "2023",
-    title: "Project 2",
+    company: "Mobile App",
+    year: "2025",
+    title: "Aora",
     results: [
       {
         title: "Result 1",
@@ -42,12 +45,12 @@ const portfolioProjects = [
       },
     ],
     link: "#",
-    image: img2,
+    image: aora,
   },
   {
-    company: "Company 3",
+    company: "Web App",
     year: "2023",
-    title: "Project 3",
+    title: "DietTrack",
     results: [
       {
         title: "Result 1",
@@ -60,7 +63,61 @@ const portfolioProjects = [
       },
     ],
     link: "#",
-    image: img3,
+    image: dietTrack,
+  },
+  {
+    company: "Mobile App",
+    year: "2023",
+    title: "RN",
+    results: [
+      {
+        title: "Result 1",
+      },
+      {
+        title: "Result 2",
+      },
+      {
+        title: "Result 3",
+      },
+    ],
+    link: "#",
+    image: rn,
+  },
+  {
+    company: "Web App",
+    year: "2023",
+    title: "Media App",
+    results: [
+      {
+        title: "Result 1",
+      },
+      {
+        title: "Result 2",
+      },
+      {
+        title: "Result 3",
+      },
+    ],
+    link: "#",
+    image: mediaApp,
+  },
+  {
+    company: "Web App",
+    year: "2023",
+    title: "POS App",
+    results: [
+      {
+        title: "Result 1",
+      },
+      {
+        title: "Result 2",
+      },
+      {
+        title: "Result 3",
+      },
+    ],
+    link: "#",
+    image: posApp,
   },
 ];
 function Projects() {
