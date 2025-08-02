@@ -23,7 +23,7 @@ const toolboxItems = [
 
 export default function About() {
   return (
-    <div className="py-20">
+    <div className="py-20" id="about">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"

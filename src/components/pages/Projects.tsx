@@ -49,7 +49,7 @@ const portfolioProjects = [
   },
   {
     company: "Web App",
-    year: "2023",
+    year: "2024",
     title: "DietTrack",
     results: [
       {
@@ -67,7 +67,7 @@ const portfolioProjects = [
   },
   {
     company: "Mobile App",
-    year: "2023",
+    year: "2024",
     title: "RN",
     results: [
       {
@@ -122,7 +122,7 @@ const portfolioProjects = [
 ];
 function Projects() {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="pb-16 lg:py-24" id="projects">
       <div className="container">
         <SectionHeader
           eyebrow="Real-world Results"
