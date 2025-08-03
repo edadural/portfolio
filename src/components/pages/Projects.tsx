@@ -17,16 +17,19 @@ const portfolioProjects = [
     title: "MovieMate",
     results: [
       {
-        title: "Result 1",
+        title:
+          "Designed smooth and responsive UI with React Native, Expo, and TailwindCSS.",
       },
       {
-        title: "Result 2",
+        title:
+          "Built trending system using Appwrite to track and display popular movies.",
       },
       {
-        title: "Result 3",
+        title:
+          "Integrated TMDB API to enable real-time movie search and dynamic content.",
       },
     ],
-    link: "#",
+    link: "https://github.com/edadural/rn_movie_app",
     image: movieMate,
   },
   {
@@ -35,16 +38,18 @@ const portfolioProjects = [
     title: "Aora",
     results: [
       {
-        title: "Result 1",
+        title:
+          "Developed using React Native, JavaScript, Appwrite, and NativeWind for a mobile-first video platform.",
       },
       {
-        title: "Result 2",
+        title: "Built real-time video sharing and dynamic feed system.",
       },
       {
-        title: "Result 3",
+        title:
+          "Enhanced user experience with animated transitions via Animatable.",
       },
     ],
-    link: "#",
+    link: "https://github.com/edadural/react_native_course",
     image: aora,
   },
   {
@@ -53,16 +58,19 @@ const portfolioProjects = [
     title: "DietTrack",
     results: [
       {
-        title: "Result 1",
+        title:
+          "Built using React, Node.js, and JavaScript with full CRUD functionality for meal tracking.",
       },
       {
-        title: "Result 2",
+        title:
+          "Created admin dashboards and calendar-based appointment management.",
       },
       {
-        title: "Result 3",
+        title:
+          "Implemented responsive web design with modern CSS and component architecture.",
       },
     ],
-    link: "#",
+    link: "https://github.com/edadural/DietTrack",
     image: dietTrack,
   },
   {
@@ -71,16 +79,19 @@ const portfolioProjects = [
     title: "RN",
     results: [
       {
-        title: "Result 1",
+        title:
+          "Developed multiple React Native apps including a number guessing game, authentication token manager, and restaurant menu display.",
       },
       {
-        title: "Result 2",
+        title:
+          "Utilized JavaScript, Expo, and NativeWind for interactive mobile UI design.",
       },
       {
-        title: "Result 3",
+        title:
+          "Practiced secure login handling, navigation flow, and dynamic list rendering.",
       },
     ],
-    link: "#",
+    link: "https://github.com/edadural/rn",
     image: rn,
   },
   {
@@ -89,16 +100,19 @@ const portfolioProjects = [
     title: "Media App",
     results: [
       {
-        title: "Result 1",
+        title:
+          "Developed with React, JavaScript, and Appwrite for real-time post and profile management.",
       },
       {
-        title: "Result 2",
+        title: "Enabled user login, image uploads, and saved posts feature.",
       },
       {
-        title: "Result 3",
+        title:
+          "Designed dark mode layout with responsive, accessible components.",
       },
     ],
-    link: "#",
+    link: "https://github.com/edadural/media-app",
+    liveLink: "https://media-app-swart.vercel.app/",
     image: mediaApp,
   },
   {
@@ -107,16 +121,20 @@ const portfolioProjects = [
     title: "POS App",
     results: [
       {
-        title: "Result 1",
+        title:
+          "Developed using the MERN stack: MongoDB, Express.js, React, and Node.js.",
       },
       {
-        title: "Result 2",
+        title:
+          "Created a functional POS interface with cart, billing, and analytics screens.",
       },
       {
-        title: "Result 3",
+        title:
+          "Optimized for desktop use with responsive UI and modular design.",
       },
     ],
-    link: "#",
+    link: "https://github.com/edadural/pos-application",
+    liveLink: "https://edadural-pos-app.onrender.com/",
     image: posApp,
   },
 ];
@@ -136,7 +154,7 @@ function Projects() {
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
               style={{
-                top: `calc(64px + ${projectIndex * 40}px`,
+                top: `calc(64px + ${projectIndex * 40}px)`,
               }}
             >
               <div className="lg:grid lg:grid-cols-2 gap-16">
@@ -164,19 +182,36 @@ function Projects() {
                     ))}
                   </ul>
 
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-900 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center mt-8 gap-2">
-                      <span>Visit Live Site</span>
+                  <div className="flex flex-col md:flex-row gap-4 mt-8">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white/90 text-gray-900 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 transition duration-300 hover:bg-white/70"
+                    >
+                      <span>Github Repo</span>
                       <ArrowUpRightIcon className="size-5 ml-2" />
-                    </button>
-                  </a>
+                    </a>
+
+                    {project.liveLink && (
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border-white/15 border-2 text-white h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 transition duration-300 hover:bg-white/5"
+                      >
+                        <span>Live Site</span>
+                        <ArrowUpRightIcon className="size-5 ml-2" />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <div className="relative">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="transition-transform duration-500 hover:scale-105 mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />
                 </div>
               </div>
