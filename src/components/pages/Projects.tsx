@@ -145,6 +145,8 @@ function Projects() {
 
   return (
     <section className="pb-16 lg:py-24" id="projects">
+      <div id="projects-observe-anchor" className="h-[1px] -mt-32"></div>
+
       <div className="container">
         <SectionHeader
           eyebrow="Real-world Results"

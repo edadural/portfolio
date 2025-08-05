@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const navItems = [
   { title: "Home", href: "#hero" },
-  { title: "Projects", href: "#projects" },
+  { title: "Projects", href: "#projects-observe-anchor" },
   { title: "Skills", href: "#skills" },
   { title: "Experience", href: "#experience" },
 ];
@@ -12,16 +12,35 @@ export default function Header() {
   const [activeHref, setActiveHref] = useState("#hero");
 
   useEffect(() => {
-    const handleHashChange = () => {
-      setActiveHref(window.location.hash || "#hero");
+    const sectionIds = navItems.map((item) => item.href.replace("#", ""));
+    const sections = sectionIds.map((id) => document.getElementById(id));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleSections = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio); // En çok görüneni al
+
+        if (visibleSections.length > 0) {
+          setActiveHref(`#${visibleSections[0].target.id}`);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px 0px -30% 0px", // alt sınırı biraz yukarı çekiyoruz
+        threshold: 0.3, // %30 görünmesi yeterli
+      }
+    );
+
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
     };
-
-    window.addEventListener("hashchange", handleHashChange);
-
-    // İlk render'da kontrol et
-    handleHashChange();
-
-    return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
   return (
