@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import movieMate from "@/assets/images/movieMate.png";
 import aora from "@/assets/images/aora.png";
 import dietTrack from "@/assets/images/dietTrack.png";
@@ -139,6 +141,8 @@ const portfolioProjects = [
   },
 ];
 function Projects() {
+  const [modalImage, setModalImage] = useState<string | null>(null);
+
   return (
     <section className="pb-16 lg:py-24" id="projects">
       <div className="container">
@@ -154,10 +158,10 @@ function Projects() {
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
               style={{
-                top: `calc(64px + ${projectIndex * 40}px)`,
+                top: `calc(64px + ${projectIndex * 20}px)`,
               }}
             >
-              <div className="lg:grid lg:grid-cols-2 gap-16">
+              <div className="lg:grid lg:grid-cols-2 gap-12">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                     <span>{project.company}</span>
@@ -176,7 +180,7 @@ function Projects() {
                         key={result.title}
                         className="flex gap-2 text-sm md:text-base text-white/50"
                       >
-                        <CheckIcon className="size-5 md:size-6" />
+                        <CheckIcon className="size-4 md:size-5 shrink-0 align-middle mt-0.5" />
                         <span>{result.title}</span>
                       </li>
                     ))}
@@ -211,7 +215,8 @@ function Projects() {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="transition-transform duration-500 hover:scale-105 mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="transition-transform duration-500 hover:scale-105 mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none cursor-pointer"
+                    onClick={() => setModalImage(project.image.src)}
                   />
                 </div>
               </div>
@@ -219,6 +224,18 @@ function Projects() {
           ))}
         </div>
       </div>
+      {modalImage && (
+        <div
+          className="fixed inset-0 z-[9999] bg-black/10 backdrop-blur-sm flex items-center justify-center"
+          onClick={() => setModalImage(null)}
+        >
+          <img
+            src={modalImage}
+            alt="Full screen"
+            className="max-w-5xl max-h-[90vh] rounded-xl shadow-lg"
+          />
+        </div>
+      )}
     </section>
   );
 }
