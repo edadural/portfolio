@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Personal Portfolio Website
 
-## Getting Started
+Welcome to my personal portfolio — a modern, responsive, and interactive web application built using **Next.js**, **React**, and **Tailwind CSS**. This website showcases my featured projects, technical skills, and professional experience.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Framework**: Next.js 13 (App Router)
+- **UI Library**: React, Tailwind CSS, Framer Motion
+- **Design Tools**: Figma, SVG animations, custom icon sets
+- **Deployment**: Vercel
+
+---
+
+## 📁 Project Structure
+
+```
+/components
+  /pages
+    - Header.tsx       → Navigation bar with active state
+    - Hero.tsx         → Introduction with animated orbit effects
+    - Projects.tsx     → List of portfolio projects (with modals & buttons)
+    - About.tsx        → Skills & technologies
+    - Experience.tsx   → Work timeline
+    - Footer.tsx       → Footer with social links
+/public
+  /images              → Project screenshots, memoji, background textures
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Featured Sections
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 🎯 Hero
 
-## Learn More
+Dynamic entrance with animated orbit elements and call-to-action buttons.
 
-To learn more about Next.js, take a look at the following resources:
+### 💼 Projects
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Showcases my recent work — built with `React Native`, `Appwrite`, `MongoDB`, and more. Projects include:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [MovieMate](https://github.com/edadural/rn_movie_app)
+- [Aora](https://github.com/edadural/react_native_course)
+- [DietTrack](https://github.com/edadural/DietTrack)
+- [POS App](https://github.com/edadural/pos-application)
+- and more...
 
-## Deploy on Vercel
+### 🛠️ Skills
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A horizontally animated toolbox highlighting:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- HTML5, CSS3, Tailwind CSS
+- JavaScript, TypeScript, React, NextJs, React Native
+- Appwrite, PostgreSQL, MongoDB, NestJS
+- Expo, Figma, VS Code
+
+### 🧩 Experience
+
+Interactive vertical timeline of my internships, freelance work, and full-stack developer roles.
+
+---
+
+## 🌍 Live Demo
+
+Visit the deployed site:
+**[Live Demo](https://portfolio-psi-five-90.vercel.app/)**
+
+---
+
+## 📬 Contact
+
+- **LinkedIn**: [Eda Dural](https://www.linkedin.com/in/eda-dural-b980151b7/)
