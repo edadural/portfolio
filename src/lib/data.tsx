@@ -1,4 +1,5 @@
 import restate from "@/assets/images/restate.png";
+import portfolio from "@/assets/images/portfolio.png";
 import aora from "@/assets/images/aora.png";
 import movieMate from "@/assets/images/movieMate.png";
 import dietTrack from "@/assets/images/dietTrack.png";
@@ -27,6 +28,28 @@ export const portfolioProjects = [
     ],
     link: "https://github.com/edadural/rn-restate-app",
     image: restate,
+  },
+  {
+    company: "Web App",
+    year: "2025",
+    title: "Portfolio Website",
+    results: [
+      {
+        title:
+          "Developed a modern personal portfolio using Next.js 13, React, and Tailwind CSS.",
+      },
+      {
+        title:
+          "Showcased featured projects, technical skills, and work experience with interactive UI.",
+      },
+      {
+        title:
+          "Implemented animations and smooth transitions with Framer Motion for enhanced UX.",
+      },
+    ],
+    link: "https://github.com/edadural/portfolio",
+    liveLink: "https://edadural-portfolio.vercel.app/",
+    image: portfolio,
   },
   {
     company: "Mobile App",
