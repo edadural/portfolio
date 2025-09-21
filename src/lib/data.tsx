@@ -6,40 +6,6 @@ import dietTrack from "@/assets/images/dietTrack.png";
 import rn from "@/assets/images/rn.png";
 import mediaApp from "@/assets/images/media-app.png";
 import posApp from "@/assets/images/pos-app.png";
-import restate1 from "@/assets/images/restate1.png";
-import restate2 from "@/assets/images/restate2.png";
-import restate3 from "@/assets/images/restate3.png";
-import restate4 from "@/assets/images/restate4.png";
-import restate5 from "@/assets/images/restate5.png";
-import restate6 from "@/assets/images/restate6.png";
-import portfolio1 from "@/assets/images/portfolio1.png";
-import portfolio2 from "@/assets/images/portfolio2.png";
-import portfolio3 from "@/assets/images/portfolio3.png";
-import portfolio4 from "@/assets/images/portfolio4.png";
-import aora1 from "@/assets/images/aora1.png";
-import aora2 from "@/assets/images/aora2.png";
-import aora3 from "@/assets/images/aora3.png";
-import aora4 from "@/assets/images/aora4.png";
-import aora5 from "@/assets/images/aora5.png";
-import movieMate1 from "@/assets/images/movieMate1.png";
-import movieMate2 from "@/assets/images/movieMate2.png";
-import movieMate3 from "@/assets/images/movieMate3.png";
-import dietTrack1 from "@/assets/images/dietTrack1.png";
-import dietTrack2 from "@/assets/images/dietTrack2.png";
-import dietTrack3 from "@/assets/images/dietTrack3.png";
-import dietTrack4 from "@/assets/images/dietTrack4.png";
-import rn1 from "@/assets/images/rn1.png";
-import rn2 from "@/assets/images/rn2.png";
-import rn3 from "@/assets/images/rn3.png";
-import mediaApp1 from "@/assets/images/mediaApp1.png";
-import mediaApp2 from "@/assets/images/mediaApp2.png";
-import mediaApp3 from "@/assets/images/mediaApp3.png";
-import mediaApp4 from "@/assets/images/mediaApp4.png";
-import mediaApp5 from "@/assets/images/mediaApp5.png";
-import posApp1 from "@/assets/images/posApp1.png";
-import posApp2 from "@/assets/images/posApp2.png";
-import posApp3 from "@/assets/images/posApp3.png";
-import posApp4 from "@/assets/images/posApp4.png";
 
 export const portfolioProjects = [
   {
@@ -61,8 +27,7 @@ export const portfolioProjects = [
       },
     ],
     link: "https://github.com/edadural/rn-restate-app",
-    image: [restate],
-    images: [restate1, restate2, restate3, restate4, restate5, restate6],
+    image: restate,
   },
   {
     company: "Web App",
@@ -84,8 +49,7 @@ export const portfolioProjects = [
     ],
     link: "https://github.com/edadural/portfolio",
     liveLink: "https://edadural-portfolio.vercel.app/",
-    image: [portfolio, portfolio, portfolio],
-    images: [portfolio1, portfolio2, portfolio3, portfolio4],
+    image: portfolio,
   },
   {
     company: "Mobile App",
@@ -105,8 +69,7 @@ export const portfolioProjects = [
       },
     ],
     link: "https://github.com/edadural/react_native_course",
-    image: [aora, aora, aora],
-    images: [aora1, aora2, aora3, aora4, aora5],
+    image: aora,
   },
   {
     company: "Mobile App",
@@ -127,8 +90,7 @@ export const portfolioProjects = [
       },
     ],
     link: "https://github.com/edadural/rn_movie_app",
-    image: [movieMate, movieMate, movieMate],
-    images: [movieMate1, movieMate2, movieMate3],
+    image: movieMate,
   },
   {
     company: "Web App",
@@ -149,8 +111,7 @@ export const portfolioProjects = [
       },
     ],
     link: "https://github.com/edadural/DietTrack",
-    image: [dietTrack, dietTrack, dietTrack],
-    images: [dietTrack1, dietTrack2, dietTrack3, dietTrack4],
+    image: dietTrack,
   },
   {
     company: "Mobile App",
@@ -171,8 +132,7 @@ export const portfolioProjects = [
       },
     ],
     link: "https://github.com/edadural/rn",
-    image: [rn, rn, rn],
-    images: [rn1, rn2, rn3],
+    image: rn,
   },
   {
     company: "Web App",
@@ -193,8 +153,7 @@ export const portfolioProjects = [
     ],
     link: "https://github.com/edadural/media-app",
     liveLink: "https://media-app-swart.vercel.app/",
-    image: [mediaApp, mediaApp, mediaApp],
-    images: [mediaApp1, mediaApp2, mediaApp3, mediaApp4, mediaApp5],
+    image: mediaApp,
   },
   {
     company: "Web App",
@@ -216,7 +175,6 @@ export const portfolioProjects = [
     ],
     link: "https://github.com/edadural/pos-application",
     liveLink: "https://edadural-pos-app.onrender.com/",
-    image: [posApp, posApp, posApp],
-    images: [posApp1, posApp2, posApp3, posApp4],
+    image: posApp,
   },
 ];
