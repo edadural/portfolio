@@ -62,7 +62,7 @@ Interactive vertical timeline of my internships, freelance work, and full-stack 
 ## 🌍 Live Demo
 
 Visit the deployed site:
-**[Live Demo](https://portfolio-psi-five-90.vercel.app/)**
+**[Live Demo](https://edadural-portfolio.vercel.app/)**
 
 ---
 
