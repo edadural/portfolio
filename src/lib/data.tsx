@@ -48,7 +48,7 @@ export const portfolioProjects = [
       },
     ],
     link: "https://github.com/edadural/portfolio",
-    liveLink: "https://edadural-portfolio.vercel.app/",
+    liveLink: "https://edadural-portfolio.netlify.app/",
     image: portfolio,
   },
   {
