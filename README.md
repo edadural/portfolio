@@ -7,7 +7,7 @@ Welcome to my personal portfolio — a modern, responsive, and interactive web a
 - **Framework**: Next.js 13 (App Router)
 - **UI Library**: React, Tailwind CSS, Framer Motion
 - **Design Tools**: Figma, SVG animations, custom icon sets
-- **Deployment**: Vercel
+- **Deployment**: Netlify
 
 ---
 
@@ -62,7 +62,7 @@ Interactive vertical timeline of my internships, freelance work, and full-stack 
 ## 🌍 Live Demo
 
 Visit the deployed site:
-**[Live Demo](https://edadural-portfolio.vercel.app/)**
+**[Live Demo](https://edadural-portfolio.netlify.app/)**
 
 ---
 
