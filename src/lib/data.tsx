@@ -6,7 +6,7 @@ import dietTrack from "@/assets/images/dietTrack.png";
 import rn from "@/assets/images/rn.png";
 import mediaApp from "@/assets/images/media-app.png";
 import posApp from "@/assets/images/pos-app.png";
-import foodDelivery from "@/assets/images/food-delivery.png";
+import foodDelivery from "@/assets/images/foodDelivery.png";
 
 export const portfolioProjects = [
   {
