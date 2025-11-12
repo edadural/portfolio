@@ -6,8 +6,30 @@ import dietTrack from "@/assets/images/dietTrack.png";
 import rn from "@/assets/images/rn.png";
 import mediaApp from "@/assets/images/media-app.png";
 import posApp from "@/assets/images/pos-app.png";
+import foodDelivery from "@/assets/images/food-delivery.png";
 
 export const portfolioProjects = [
+  {
+    company: "Mobile App",
+    year: "2025",
+    title: "Fast Delivery App",
+    results: [
+      {
+        title:
+          "Developed a full-stack Food Ordering mobile application using React Native, TypeScript, and Tailwind CSS.",
+      },
+      {
+        title:
+          "Ensured a consistent mobile interface through modular and reusable components developed with NativeWind.",
+      },
+      {
+        title:
+          "Optimized the application's cart and user state management using Zustand.",
+      },
+    ],
+    link: "https://github.com/edaadural/rn-fast-food-app",
+    image: foodDelivery,
+  },
   {
     company: "Mobile App",
     year: "2025",

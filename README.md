@@ -66,6 +66,17 @@ Visit the deployed site:
 
 ---
 
+## 📸 Screenshots
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <img src="https://github.com/edadural/rn-fast-food-app/blob/main/src/assets/images/1.png" alt="img" width="400" style="margin: 5px;" />
+  <img src="https://github.com/edadural/rn-fast-food-app/blob/main/src/assets/images/2.png" alt="img" width="400" style="margin: 5px;" />
+  <img src="https://github.com/edadural/rn-fast-food-app/blob/main/src/assets/images/3.png" alt="img" width="400" style="margin: 5px;" />
+  <img src="https://github.com/edadural/rn-fast-food-app/blob/main/src/assets/images/4.png" alt="img" width="400" style="margin: 5px;" />
+</div>
+
+---
+
 ## 📬 Contact
 
 - **LinkedIn**: [Eda Dural](https://www.linkedin.com/in/eda-dural-b980151b7/)
