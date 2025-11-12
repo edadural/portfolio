@@ -27,7 +27,7 @@ export const portfolioProjects = [
           "Optimized the application's cart and user state management using Zustand.",
       },
     ],
-    link: "https://github.com/edaadural/rn-fast-food-app",
+    link: "https://github.com/edadural/rn-fast-food-app",
     image: foodDelivery,
   },
   {
